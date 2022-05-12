@@ -1,1 +1,88 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+.row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x)/ -2);
+    margin-left: calc(var(--bs-gutter-x)/ -2);
+}
+
+
+
+
+
+.dot_design {
+    color: rgba(16, 140, 241, 0.863);
+    font-size: 4rem;
+}
+
+
+
+
+
+.bi-heart,
+.bi-cart {
+    font-size: 2rem;
+}
+
+.badge {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+
+
+
+
+
+
+.active,
+.nav-link:hover {
+    background-color: rgba(16, 140, 241, 0.863)!important;
+    color: white!important;
+}
+
+
+
+
+
+
+
+.zoom {
+    transition: transform .2s;
+    margin: 5 px;
+}
+
+.zoom:hover {
+    transform: scale(1.2);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+p {
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+
+.MenImg {
+    float: right!important;
+}
+
+footer {
+    background-color: rgba(241, 240, 240, 0.952);
+}
+
+.card:hover {
+    box-shadow: 5px 10px #bebebe59;
+}
+
+#btn-Size:hover {
+    background-color: rgba(16, 140, 241, 0.863)!important;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

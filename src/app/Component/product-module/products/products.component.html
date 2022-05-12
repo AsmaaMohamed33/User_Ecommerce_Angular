@@ -1,0 +1,51 @@
+
+
+              <section class="cart bac " id="cart">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <img class="rotateimage" src="/assets/777.png" style="width: 100%;">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+                        </div>
+        
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-sm-12 col-md-12 col-lg-12 d-flex flex-row flex-wrap justify-content-center mt-3">
+                        <div *ngFor="let Prod of chooseList">
+                            <div class="card mx-2 my-2 text-center zoom" style="width: 18rem;">
+                                <a href="/product/{{Prod.id}}">
+                                    <img mat-dialog-actions  ng-click="OpenDialog()"  src="/assets/{{Prod.img}}" class="card-img-top " alt="..."> 
+                                </a>
+                                <div class="card-body">
+                                    <h6 class="card-title">{{Prod.name}}</h6>
+                                    <p class="fs-3" style="color:orange;">{{Prod.price}} EGP</p>
+                                    <input #itemsCount type="number" class="form-control">
+                                    <br>
+                                    <a  class="btn btn-info text-white" (click)="addtocart(Prod)">Add To Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+  
+                   
+            
+           
+            
+            
